@@ -6,6 +6,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new helloworld()
+    new helloworld({
+      message: "my first webpack plugin"
+    })
   ]
 };
